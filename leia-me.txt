@@ -1,0 +1,37 @@
+SITE DE REBECA DIÓGENES DE QUEIRÓS NUNES - COMO COLOCAR NO AR
+
+CONTEÚDO DA PASTA
+- index.html   : o site completo (um único arquivo)
+- robots.txt   : orientação para o Google
+- sitemap.xml  : mapa do site para o Search Console
+- googlea879f6b9cc63944c.html : arquivo de verificação do Google (NÃO apague nem altere)
+
+PASSO 1 - TROCAR O ENDEREÇO
+Nos três arquivos, troque rebecadiogenesnunes.netlify.app pelo seu domínio real
+(exemplo: https://rebecadiogenes.com.br/). Se preferir, me diga o domínio
+na conversa e eu gero os arquivos já prontos.
+
+PASSO 2 - HOSPEDAR (gratuito)
+Opção mais simples: Netlify
+ 1. Acesse app.netlify.com/drop e crie uma conta.
+ 2. Arraste a pasta com os 3 arquivos para a página.
+ 3. O site entra no ar em um endereço provisório.
+ 4. Em "Domain management", clique em "Add a domain" e siga as instruções
+    para conectar o seu domínio.
+Alternativas: Cloudflare Pages ou GitHub Pages.
+
+PASSO 3 - SEARCH CONSOLE
+ 1. Acesse search.google.com/search-console e clique em "Adicionar propriedade".
+ 2. Escolha "Prefixo do URL" e digite o endereço do site (https://seu-dominio...).
+ 3. Em "Arquivo HTML", confirme que o arquivo googlea879f6b9cc63944c.html
+    está no site (abra SEU-ENDEREÇO/googlea879f6b9cc63944c.html para testar)
+    e clique em "Verificar".
+ 4. Em "Inspeção de URL", cole a página inicial e clique em "Solicitar indexação".
+ 5. Em "Sitemaps", envie: sitemap.xml
+
+PASSO 4 - DIVULGAR O ENDEREÇO
+Coloque o endereço do site na bio do Instagram, no LinkedIn, no Lattes e no ORCID.
+
+ATUALIZAR NOVIDADES
+Peça na conversa: "atualize as novidades". Depois, substitua o index.html
+na hospedagem pelo arquivo novo.
