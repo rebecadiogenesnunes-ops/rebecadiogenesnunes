@@ -53,11 +53,22 @@ section{max-width:1000px;margin:auto;padding:56px 20px}
 .tl div:before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent2)}
 .meta{font-size:.78rem;color:var(--accent2);font-weight:500;margin-bottom:10px}.src{display:inline-block;margin-top:12px;font-size:.88rem;font-weight:500}.note{font-size:.85rem;color:var(--muted);margin-top:14px}
 footer{border-top:1px solid var(--line);text-align:center;padding:30px 20px;color:var(--muted);font-size:.85rem}
+
+nav div{align-items:center}
+.btn-esc,nav a.nav-esc{--g1:#8A5F1C;--g2:#B58A3C;--gt:#fff;display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--g1),var(--g2));color:var(--gt);font-weight:600;text-decoration:none;border-radius:999px;box-shadow:0 8px 18px -8px rgba(138,95,28,.75);transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn-esc{padding:12px 22px;font-size:.95rem}
+nav a.nav-esc{padding:7px 16px;font-size:.88rem;color:var(--gt)}
+.btn-esc:hover,nav a.nav-esc:hover{color:var(--gt);transform:translateY(-2px);box-shadow:0 12px 22px -8px rgba(138,95,28,.85)}
+.btn-esc:focus-visible,nav a.nav-esc:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn-esc svg,nav a.nav-esc svg{width:17px;height:17px;flex:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn-esc,:root:not([data-theme="light"]) nav a.nav-esc{--g1:#D3B073;--g2:#E6CC96;--gt:#141b1a}}
+:root[data-theme="dark"] .btn-esc,:root[data-theme="dark"] nav a.nav-esc{--g1:#D3B073;--g2:#E6CC96;--gt:#141b1a}
+@media (prefers-reduced-motion:reduce){.btn-esc,nav a.nav-esc{transition:none}}
 </style>
 </head>
 <body>
 <nav><div>
-<a href="#inicio">Início</a><a href="#trajetoria">Trajetória</a><a href="#sobrames">SOBRAMES-CE</a><a href="#producao">Produção</a><a href="#atualizacoes">Atualizações</a><a href="#estudos">Estudos</a><a href="#curriculo">Currículo</a><a href="#contato">Contato</a>
+<a href="#inicio">Início</a><a class="nav-esc" href="blog-rebeca-diogenes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>Meus escritos</a><a href="#trajetoria">Trajetória</a><a href="#sobrames">SOBRAMES-CE</a><a href="#producao">Produção</a><a href="#atualizacoes">Atualizações</a><a href="#estudos">Estudos</a><a href="#curriculo">Currículo</a><a href="#contato">Contato</a>
 </div></nav>
 
 <section id="inicio" class="hero">
@@ -66,7 +77,8 @@ footer{border-top:1px solid var(--line);text-align:center;padding:30px 20px;colo
 <h1>Rebeca Diógenes Nunes</h1>
 <p class="lead">Advogada e acadêmica de Medicina, dedicada ao estudo e às atualizações em cirurgia, ortopedia, clínica médica, urgência e emergência e farmacologia. Atua também na pesquisa científica e escrita médica e humanística.</p>
 <div class="btns">
-<a class="btn" href="#curriculo">Ver currículo</a>
+<a class="btn-esc" href="blog-rebeca-diogenes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>Ler meus escritos</a>
+<a class="btn o" href="#curriculo">Ver currículo</a>
 <a class="btn o" href="https://www.instagram.com/rebecadiogenesnunes" target="_blank" rel="noopener">@rebecadiogenesnunes</a>
 </div>
 <div class="soc"><a href="https://www.instagram.com/rebecadiogenesnunes" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/rebeca-di%C3%B3genes-nunes-177836432" target="_blank" rel="noopener">LinkedIn</a><a href="http://lattes.cnpq.br/2102863857000682" target="_blank" rel="noopener">Lattes</a><a href="https://scholar.google.com/citations?user=zxWDeR4AAAAJ&hl=pt-BR" target="_blank" rel="noopener">Google Scholar</a><a href="https://orcid.org/0009-0007-9422-1179" target="_blank" rel="noopener">ORCID</a></div>
@@ -81,6 +93,17 @@ footer{border-top:1px solid var(--line);text-align:center;padding:30px 20px;colo
 <div><h3>Liderança acadêmica</h3><p class="meta">LINDEP</p><p class="note" style="margin:0">Presidente da Liga Acadêmica de Interações Medicamentosas e Dependência Química da Unichristus.</p></div>
 <div><h3>Pesquisa</h3><p class="meta">Iniciação científica · desde 2024</p><p class="note" style="margin:0">Coordena projeto sobre reganho de peso após bypass gástrico e gastrectomia vertical no tratamento da obesidade, em hospital do SUS.</p></div>
 </div>
+</section>
+
+<section id="escritos">
+<h2>Meus escritos</h2>
+<p class="lead">Crônicas e reflexões sobre medicina, estoicismo e o lado humano do cuidado. Leia no blog.</p>
+<div class="grid" style="margin-top:22px">
+<div class="card"><span class="tag">Estoicismo</span><h3>Estoicismo na Medicina</h3><p>O que a serenidade ensina a quem cuida.</p><a class="src" href="blog-rebeca-diogenes.html#estoicismo">Ler no blog →</a></div>
+<div class="card"><span class="tag">Saúde mental</span><h3>Van Gogh e o que ele ainda nos pergunta</h3><p>Como você está, de verdade? Um convite afetuoso ao cuidado.</p><a class="src" href="blog-rebeca-diogenes.html#vangogh">Ler no blog →</a></div>
+<div class="card"><span class="tag">Crônica</span><h3>Entre Algoritmos e Pulsações</h3><p>Inteligência artificial e o cuidado que só o humano conjuga.</p><a class="src" href="http://blogdasobramesceara.blogspot.com/2025/06/por-rebeca-diogenes-entre-algoritmos-e.html" target="_blank" rel="noopener">Ler no Blog da SOBRAMES-CE →</a></div>
+</div>
+<div class="btns" style="margin-top:22px"><a class="btn-esc" href="blog-rebeca-diogenes.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>Abrir o blog completo</a></div>
 </section>
 
 <section id="sobrames">
