@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rebecadiogenesnunes.netlify.app/sitemap.xml
+Sitemap: https://rebecadiogenesnunes-ops.github.io/rebecadiogenesnunes/sitemap.xml
